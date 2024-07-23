@@ -1,0 +1,41 @@
+.sidebar {
+  background-color: #ffffff;
+  max-width: 306px;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.26px;
+    display: flex;
+    gap: 1px;
+    align-items: baseline;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url(../images/setting.svg);
+      background-repeat: no-repeat;
+      width: 37px;
+      height: 37px;
+      align-self: center;
+      margin-right: 7px;
+    }
+  }
+
+  &__version {
+    font-size: 10px;
+    font-weight: 500;
+    color: #838383;
+    letter-spacing: -0.1px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
